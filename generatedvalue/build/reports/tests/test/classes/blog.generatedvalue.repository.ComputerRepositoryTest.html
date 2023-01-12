@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ComputerRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ComputerRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/blog.generatedvalue.repository.html">blog.generatedvalue.repository</a> &gt; ComputerRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.318s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">isNew를 오버라이딩하여 GeneratedValue 안쓰고 저장하기</td>
+<td class="success">save()</td>
+<td class="success">0.318s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>05:01:30.880 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+05:01:30.892 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+05:01:30.924 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [blog.generatedvalue.repository.ComputerRepositoryTest] from class [org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper]
+05:01:30.932 [Test worker] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [blog.generatedvalue.repository.ComputerRepositoryTest], using SpringBootContextLoader
+05:01:30.935 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [blog.generatedvalue.repository.ComputerRepositoryTest]: class path resource [blog/generatedvalue/repository/ComputerRepositoryTest-context.xml] does not exist
+05:01:30.936 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [blog.generatedvalue.repository.ComputerRepositoryTest]: class path resource [blog/generatedvalue/repository/ComputerRepositoryTestContext.groovy] does not exist
+05:01:30.937 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [blog.generatedvalue.repository.ComputerRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+05:01:30.938 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [blog.generatedvalue.repository.ComputerRepositoryTest]: ComputerRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+05:01:30.996 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [blog.generatedvalue.repository.ComputerRepositoryTest]
+05:01:31.044 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/koseyun/IdeaProjects/blog/generatedvalue/build/classes/java/main/blog/generatedvalue/GeneratedvalueApplication.class]
+05:01:31.045 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration blog.generatedvalue.GeneratedvalueApplication for test class blog.generatedvalue.repository.ComputerRepositoryTest
+05:01:31.047 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - @TestExecutionListeners is not present for class [blog.generatedvalue.repository.ComputerRepositoryTest]: using defaults.
+05:01:31.048 [Test worker] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+05:01:31.059 [Test worker] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4c4748bf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7ce97ee5, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@32c8e539, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@73dce0e6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5a85c92, org.springframework.test.context.support.DirtiesContextTestExecutionListener@32811494, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4795ded0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@53dacd14, org.springframework.test.context.event.EventPublishingTestExecutionListener@14d14731, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2eced48b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@47c4ecdc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@42f33b5d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c8504fd, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4b7e96a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6475472c]
+05:01:31.062 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@f001896 testClass = ComputerRepositoryTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@13f17eb4 testClass = ComputerRepositoryTest, locations = '{}', classes = '{class blog.generatedvalue.GeneratedvalueApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@21fd5faa, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3fc9504b, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@c81fd0ce, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@535779e4, [ImportsContextCustomizer@1d0d6318 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, com.github.gavlyukovskiy.boot.jdbc.decorator.DataSourceDecoratorAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@41d426b5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6aa3a905, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+05:01:31.071 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@f001896 testClass = ComputerRepositoryTest, testInstance = blog.generatedvalue.repository.ComputerRepositoryTest@5bc9ba1d, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@13f17eb4 testClass = ComputerRepositoryTest, locations = '{}', classes = '{class blog.generatedvalue.GeneratedvalueApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@21fd5faa, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3fc9504b, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@c81fd0ce, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@535779e4, [ImportsContextCustomizer@1d0d6318 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, com.github.gavlyukovskiy.boot.jdbc.decorator.DataSourceDecoratorAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@41d426b5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6aa3a905, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.7)
+
+2023-01-13 05:01:31.414  INFO 40921 --- [    Test worker] b.g.repository.ComputerRepositoryTest    : Starting ComputerRepositoryTest using Java 17.0.5 on koseyun-350XCJ-350XCR with PID 40921 (started by koseyun in /home/koseyun/IdeaProjects/blog/generatedvalue)
+2023-01-13 05:01:31.415  INFO 40921 --- [    Test worker] b.g.repository.ComputerRepositoryTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-01-13 05:01:31.736  INFO 40921 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-13 05:01:31.778  INFO 40921 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2023-01-13 05:01:31.823  INFO 40921 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-01-13 05:01:31.961  INFO 40921 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:1181e449-e551-4bd9-aacb-969008a7f483;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-01-13 05:01:32.291  INFO 40921 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-13 05:01:32.323  INFO 40921 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-13 05:01:32.441  INFO 40921 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-13 05:01:32.547  INFO 40921 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-13 05:01:33.007 DEBUG 40921 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists book CASCADE 
+Hibernate: 
+    
+    drop table if exists book CASCADE 
+2023-01-13 05:01:33.012  INFO 40921 --- [    Test worker] p6spy                                    : #1673553693012 | took 0ms | statement | connection 1| url jdbc:h2:mem:1181e449-e551-4bd9-aacb-969008a7f483
+
+    drop table if exists book CASCADE 
+
+    drop table if exists book CASCADE ;
+2023-01-13 05:01:33.012 DEBUG 40921 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists computer CASCADE 
+Hibernate: 
+    
+    drop table if exists computer CASCADE 
+2023-01-13 05:01:33.013  INFO 40921 --- [    Test worker] p6spy                                    : #1673553693013 | took 0ms | statement | connection 1| url jdbc:h2:mem:1181e449-e551-4bd9-aacb-969008a7f483
+
+    drop table if exists computer CASCADE 
+
+    drop table if exists computer CASCADE ;
+2023-01-13 05:01:33.013 DEBUG 40921 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists music CASCADE 
+Hibernate: 
+    
+    drop table if exists music CASCADE 
+2023-01-13 05:01:33.014  INFO 40921 --- [    Test worker] p6spy                                    : #1673553693014 | took 0ms | statement | connection 1| url jdbc:h2:mem:1181e449-e551-4bd9-aacb-969008a7f483
+
+    drop table if exists music CASCADE 
+
+    drop table if exists music CASCADE ;
+2023-01-13 05:01:33.014 DEBUG 40921 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop sequence if exists hibernate_sequence
+Hibernate: 
+    
+    drop sequence if exists hibernate_sequence
+2023-01-13 05:01:33.015  INFO 40921 --- [    Test worker] p6spy                                    : #1673553693015 | took 0ms | statement | connection 1| url jdbc:h2:mem:1181e449-e551-4bd9-aacb-969008a7f483
+
+    drop sequence if exists hibernate_sequence
+
+    drop sequence if exists hibernate_sequence;
+2023-01-13 05:01:33.017 DEBUG 40921 --- [    Test worker] org.hibernate.SQL                        : create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+2023-01-13 05:01:33.020  INFO 40921 --- [    Test worker] p6spy                                    : #1673553693020 | took 1ms | statement | connection 2| url jdbc:h2:mem:1181e449-e551-4bd9-aacb-969008a7f483
+create sequence hibernate_sequence start with 1 increment by 1
+create sequence hibernate_sequence start with 1 increment by 1;
+2023-01-13 05:01:33.021 DEBUG 40921 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table book (
+       book_id bigint not null,
+        book_name varchar(255),
+        primary key (book_id)
+    )
+Hibernate: 
+    
+    create table book (
+       book_id bigint not null,
+        book_name varchar(255),
+        primary key (book_id)
+    )
+2023-01-13 05:01:33.029  INFO 40921 --- [    Test worker] p6spy                                    : #1673553693029 | took 5ms | statement | connection 2| url jdbc:h2:mem:1181e449-e551-4bd9-aacb-969008a7f483
+
+    create table book (
+       book_id bigint not null,
+        book_name varchar(255),
+        primary key (book_id)
+    )
+
+    create table book (
+       book_id bigint not null,
+        book_name varchar(255),
+        primary key (book_id)
+    );
+2023-01-13 05:01:33.033 DEBUG 40921 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table computer (
+       computer_seq varchar(255) not null,
+        created_date timestamp,
+        last_modified_date timestamp,
+        computer_name varchar(255),
+        primary key (computer_seq)
+    )
+Hibernate: 
+    
+    create table computer (
+       computer_seq varchar(255) not null,
+        created_date timestamp,
+        last_modified_date timestamp,
+        computer_name varchar(255),
+        primary key (computer_seq)
+    )
+2023-01-13 05:01:33.043  INFO 40921 --- [    Test worker] p6spy                                    : #1673553693043 | took 3ms | statement | connection 2| url jdbc:h2:mem:1181e449-e551-4bd9-aacb-969008a7f483
+
+    create table computer (
+       computer_seq varchar(255) not null,
+        created_date timestamp,
+        last_modified_date timestamp,
+        computer_name varchar(255),
+        primary key (computer_seq)
+    )
+
+    create table computer (
+       computer_seq varchar(255) not null,
+        created_date timestamp,
+        last_modified_date timestamp,
+        computer_name varchar(255),
+        primary key (computer_seq)
+    );
+2023-01-13 05:01:33.044 DEBUG 40921 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table music (
+       music_seq varchar(255) not null,
+        music_name varchar(255),
+        primary key (music_seq)
+    )
+Hibernate: 
+    
+    create table music (
+       music_seq varchar(255) not null,
+        music_name varchar(255),
+        primary key (music_seq)
+    )
+2023-01-13 05:01:33.046  INFO 40921 --- [    Test worker] p6spy                                    : #1673553693046 | took 1ms | statement | connection 2| url jdbc:h2:mem:1181e449-e551-4bd9-aacb-969008a7f483
+
+    create table music (
+       music_seq varchar(255) not null,
+        music_name varchar(255),
+        primary key (music_seq)
+    )
+
+    create table music (
+       music_seq varchar(255) not null,
+        music_name varchar(255),
+        primary key (music_seq)
+    );
+2023-01-13 05:01:33.047  INFO 40921 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-13 05:01:33.056  INFO 40921 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-13 05:01:33.454  INFO 40921 --- [    Test worker] b.g.repository.ComputerRepositoryTest    : Started ComputerRepositoryTest in 2.36 seconds (JVM running for 3.281)
+2023-01-13 05:01:33.483  INFO 40921 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@f001896 testClass = ComputerRepositoryTest, testInstance = blog.generatedvalue.repository.ComputerRepositoryTest@5bc9ba1d, testMethod = save@ComputerRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@13f17eb4 testClass = ComputerRepositoryTest, locations = '{}', classes = '{class blog.generatedvalue.GeneratedvalueApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@21fd5faa, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3fc9504b, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@c81fd0ce, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@535779e4, [ImportsContextCustomizer@1d0d6318 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, com.github.gavlyukovskiy.boot.jdbc.decorator.DataSourceDecoratorAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@41d426b5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6aa3a905, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@4e79c25]; rollback [true]
+2023-01-13 05:01:33.694 DEBUG 40921 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        computer
+        (created_date, last_modified_date, computer_name, computer_seq) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        computer
+        (created_date, last_modified_date, computer_name, computer_seq) 
+    values
+        (?, ?, ?, ?)
+2023-01-13 05:01:33.705  INFO 40921 --- [    Test worker] p6spy                                    : #1673553693705 | took 1ms | statement | connection 3| url jdbc:h2:mem:1181e449-e551-4bd9-aacb-969008a7f483
+insert into computer (created_date, last_modified_date, computer_name, computer_seq) values (?, ?, ?, ?)
+insert into computer (created_date, last_modified_date, computer_name, computer_seq) values ('2023-01-13T05:01:33.672+0900', '2023-01-13T05:01:33.672+0900', 'linux용', 'computer-3001');
+2023-01-13 05:01:33.773  INFO 40921 --- [    Test worker] p6spy                                    : #1673553693773 | took 0ms | rollback | connection 3| url jdbc:h2:mem:1181e449-e551-4bd9-aacb-969008a7f483
+
+;
+2023-01-13 05:01:33.775  INFO 40921 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@f001896 testClass = ComputerRepositoryTest, testInstance = blog.generatedvalue.repository.ComputerRepositoryTest@5bc9ba1d, testMethod = save@ComputerRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@13f17eb4 testClass = ComputerRepositoryTest, locations = '{}', classes = '{class blog.generatedvalue.GeneratedvalueApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@21fd5faa, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3fc9504b, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@c81fd0ce, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@535779e4, [ImportsContextCustomizer@1d0d6318 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, com.github.gavlyukovskiy.boot.jdbc.decorator.DataSourceDecoratorAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@41d426b5, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6aa3a905, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at 2023. 1. 13. 오전 5:01:33</p>
+</div>
+</div>
+</body>
+</html>
