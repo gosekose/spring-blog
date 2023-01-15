@@ -1,0 +1,16 @@
+### 1. 회원가입 폼 실패 (비밀번호 10자 미만)
+POST http://localhost:8080/api/v1/register
+Content-Type: application/json
+Accept: */*
+Connection: keep-alive
+
+{
+  "email": "kose@naver.com",
+  "password": "kose1234"
+}
+
+> {%
+    client.test("회원 가입 요청은 패스워드가 10자 이상 가능", function() {
+        client.assert(response.status === 400, "Response status is BADREQUEST");
+    });
+%}
