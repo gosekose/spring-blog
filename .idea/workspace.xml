@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="8a177816-34df-4f6e-9f47-3dd9210fa2c1" name="변경" comment="" />
+=======
+    <list default="true" id="8e16959c-057a-4d35-9333-4bd183032cf3" name="변경" comment="" />
+>>>>>>> 4be4aff (feat: feat: blog Exception 소스)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +19,7 @@
       <ProjectState />
     </projectState>
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -34,6 +39,9 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+=======
+  <component name="ProjectId" id="2KNBJNyMhM0uSYb3ul5eYKVhUZ7" />
+>>>>>>> 4be4aff (feat: feat: blog Exception 소스)
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -42,13 +50,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+<<<<<<< HEAD
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "/home/koseyun/IdeaProjects/blog/generatedvalue",
+=======
+    "last_opened_file_path": "/home/koseyun/IdeaProjects/blog/exception/exception",
+>>>>>>> 4be4aff (feat: feat: blog Exception 소스)
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+<<<<<<< HEAD
     "spring.configuration.checksum": "3276a577e0914e7be8c4605add8a7766"
   }
 }]]></component>
@@ -156,10 +169,20 @@
     <configuration name="GeneratedvalueApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="generatedvalue.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="blog.generatedvalue.GeneratedvalueApplication" />
+=======
+    "spring.configuration.checksum": "9d784ebce1e1b9bf1a26296359c6245e"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ExceptionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="exception.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="blog.exception.ExceptionApplication" />
+>>>>>>> 4be4aff (feat: feat: blog Exception 소스)
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ComputerRepositoryTest.save" />
@@ -168,22 +191,34 @@
         <item itemvalue="Gradle.BookRepositoryTest" />
       </list>
     </recent_temporary>
+=======
+>>>>>>> 4be4aff (feat: feat: blog Exception 소스)
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
+<<<<<<< HEAD
       <changelist id="8a177816-34df-4f6e-9f47-3dd9210fa2c1" name="변경" comment="" />
       <created>1673551197848</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673551197848</updated>
       <workItem from="1673551199007" duration="3115000" />
+=======
+      <changelist id="8e16959c-057a-4d35-9333-4bd183032cf3" name="변경" comment="" />
+      <created>1673805088178</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673805088178</updated>
+      <workItem from="1673805089343" duration="153000" />
+>>>>>>> 4be4aff (feat: feat: blog Exception 소스)
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -211,4 +246,6 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+=======
+>>>>>>> 4be4aff (feat: feat: blog Exception 소스)
 </project>
