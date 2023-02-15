@@ -15,8 +15,8 @@ function setConnected(connected) {
 }
 
 function connect() {
-    var gameId = "testGameId";
-    var socket = new SockJS('/gs-guide-websocket');
+    // var gameId = "testGameId";
+    var socket = new SockJS('/gs-guide-websocket/');
 
     var headers = {
         'Authorization': 'Bearer my-token',
