@@ -1,4 +1,6 @@
 var stompClient = null;
+const urlParams = new URLSearchParams(window.location.search);
+const gameId = urlParams.get('gameId');
 
 function setConnected(connected) {
     $("#connect").prop("disabled", connected);
@@ -13,6 +15,7 @@ function setConnected(connected) {
 }
 
 function connect() {
+    var gameId = "testGameId";
     var socket = new SockJS('/gs-guide-websocket');
 
     var headers = {
@@ -26,8 +29,9 @@ function connect() {
     stompClient.connect(headers, function (frame) {
         setConnected(true);
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/greetings', function (greeting) {
+        stompClient.subscribe('/topic/greetings/' + gameId, function (greeting) {
             showGreeting(JSON.parse(greeting.body).content);
+            console.log(JSON.parse(greeting.body).content);
         });
     });
 }
@@ -47,7 +51,8 @@ function sendName() {
         'userId': 'testUserId'
     };
 
-    stompClient.send("/app/hello", headers, JSON.stringify({'name': $("#name").val()}));
+    stompClient.send("/app/hello/" + gameId, headers, JSON.stringify({'name': $("#name").val()}));
+    console.log(JSON.stringify({'name': $("#name").val()}));
 }
 
 function showGreeting(message) {
