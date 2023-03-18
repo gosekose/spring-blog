@@ -12,6 +12,30 @@ function setConnected(connected) {
     $("#greetings").html("");
 }
 
+// function connect() {
+//     var socket = new SockJS('/gs-guide-websocket');
+//
+//     var gameId = $("#channel").val();
+//
+//     var headers = {
+//         "gameId": gameId,
+//         'Authorization': 'Bearer my-token',
+//         'userId': 'testUserId'
+//     };
+//
+//     stompClient = Stomp.over(socket);
+//     stompClient.heartbeat.outgoing = 0;  // disable outgoing heartbeats
+//     stompClient.heartbeat.incoming = 0;
+//     stompClient.connect(headers, function (frame) {
+//         setConnected(true);
+//         console.log('Connected: ' + frame);
+//         stompClient.subscribe('/topic/greetings/' + gameId, function (greeting) {
+//             showGreeting(JSON.parse(greeting.body).content);
+//             console.log(JSON.parse(greeting.body).content);
+//         });
+//     });
+// }
+
 function connect() {
     var socket = new SockJS('/gs-guide-websocket');
 
@@ -33,8 +57,25 @@ function connect() {
             showGreeting(JSON.parse(greeting.body).content);
             console.log(JSON.parse(greeting.body).content);
         });
+
+        // Start a timer to check for inactivity
+        var timer = setTimeout(function() {
+            alert("Please chat to avoid being disconnected.");
+        }, 30000);
+
+        // Reset the timer whenever a message is sent
+        stompClient.send("/app/hello/" + gameId, headers, JSON.stringify({
+            "gameId": gameId,
+            'name': $("#name").val()
+        }));
+        console.log(JSON.stringify({'name': $("#name").val()}));
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+            alert("Please chat to avoid being disconnected.");
+        }, 30000);
     });
 }
+
 
 function disconnect() {
     if (stompClient !== null) {

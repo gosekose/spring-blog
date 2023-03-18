@@ -10,16 +10,16 @@ import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
 
 @Configuration
-@RequiredArgsConstructor
 @EnableWebSocketMessageBroker
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
-    private final GameInterceptor gameInterceptor;
-
-
     @Override
     public void configureClientInboundChannel(ChannelRegistration registration) {
-        registration.interceptors(gameInterceptor);
+        registration.interceptors(new GameInterceptor());
+    }
+
+    @Override
+    public void configureClientOutboundChannel(ChannelRegistration registration) {
     }
 
     @Override

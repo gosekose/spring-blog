@@ -1,5 +1,7 @@
 package com.example.websocketpathvariable;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.Message;
@@ -31,26 +33,16 @@ public class GreetingController {
                              @DestinationVariable String gameId,
                              StompHeaderAccessor headerAccessor) throws Exception {
 
+        log.info("message = {}", headerAccessor);
+
+        String userId = headerAccessor.getFirstNativeHeader("userId");
+        log.info("userId = {}", userId);
+
+
         Greeting greeting = new Greeting("Hello, " + HtmlUtils.htmlEscape(message.getName()) + "!");
 
         template.convertAndSend("/topic/greetings/" + gameId, greeting);
     }
 
 
-    public String getUserIdByHeaders(SimpMessageHeaderAccessor headerAccessor) {
-
-        Map<String, Object> headers = headerAccessor.getMessageHeaders();
-
-        Map<String, Object> nativeHeaders;
-        if ((nativeHeaders = (Map<String, Object>) headers.get("nativeHeaders")) != null) {
-
-            if (!((List<String>) nativeHeaders.get("userId")).isEmpty()) {
-                return ((List<String>) nativeHeaders.get("userId")).get(0);
-            } else {
-                throw new NotAcceptableStatusException("error");
-            }
-        }
-
-        throw new NotAcceptableStatusException("error");
-    }
 }
