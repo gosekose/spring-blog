@@ -1,0 +1,29 @@
+logging:
+  level:
+    org:
+      springframework:
+        transaction:
+          interceptor: TRACE
+        datasource:
+          DataSourceTransactionManager: DEBUG
+        orm:
+          jpa:
+            JpaTransactionManager: DEBUG
+    hibernate:
+      resource:
+        transaction: DEBUG
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/liardev
+    username: root
+    password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
